@@ -6,6 +6,23 @@ import numpy as np
 
 from Variables_Values import *
 
+import streamlit as st
+
+st.set_page_config(page_title="My Data App", layout="wide")
+
+st.header("Hi, I'm Aditya Punia :wave:")
+st.title("Welcome to my Tic-Tac-Toe Game!")
+
+st.write("---")
+
+# Controls
+st.subheader("Controls")
+st.text("Default Diffuculty is HARD")
+st.text("To Change Difficulty level to Easy => Press 'E'")
+st.text("To Change Difficulty level to Hard again => Press 'H'")
+st.text("To Change Game Mode to Human vs Human => Press 'G'")
+st.text("To Restart the Game => Press 'R'")
+
 # PYGAME
 pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
